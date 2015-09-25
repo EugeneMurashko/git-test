@@ -144,7 +144,7 @@
 			table1[i][j] = 0;
 		}
 	}
-	generationBord();
+		generationBord();
 	
 	//функция размещающая корабли
 	//функция проверяющая можно ли там разместить корабль.
@@ -320,7 +320,43 @@
 					if(table1[i][j] == -1) table1[i][j] = 0;
 				}
 			}
+		
+		// расставляем 4 однопалубника
+		var col1bord = 0;
+		var flag111 = true;
+		while(flag111){
+			var k = getRandomInt(0, 10);
+			var l = getRandomInt(0, 10);
+			if(myFunEmpty(k, l))
+				if(myFunEmpty(k, l + 1))
+					if(myFunEmpty(k + 1, l))
+						if(myFunEmpty(k + 1, l + 1))
+							if(myFunEmpty(k + 1, l + 1))
+								if(myFunEmpty(k, l - 1))
+									if(myFunEmpty(k - 1, l))
+										if(myFunEmpty(k - 1, l - 1))
+											if(myFunEmpty(k - 1, l - 1)){
+												table1[k][l] = 1;
+												col1bord++;
+										}
+			
+			if(col1bord == 4) flag111 = false;
+		}
+		
+		// вращаем доску случайным образом
+		for(var i = 0; i < getRandomInt(0, 5); i++){ // от 0 до 3х 
+			ternBord(table1);
+		}
+		
+	}
 	
+	function myFunEmpty(k, l){
+		if(k < 0 || k > 10 || l < 0 || l > 10)
+			return true;
+		if(table1[k][l] == 0)
+			return true;
+		else
+			return false;
 	}
 	
 	function nextCrd(a, str){
@@ -348,6 +384,35 @@
 	
 	function getRandomInt(min, max) {
 		return Math.floor(Math.random() * (max - min)) + min;
+	}
+	
+	// функция поворота доски
+	function ternBord(arr){
+		var tmp = matrixArray(10,10);
+            var n = 10;
+            for( var i = 0; i < n / 2; i++ ){
+                for ( var j = i; j < n - 1 - i; j++ ){
+                    tmp = arr[i][j];
+					arr[i][j] = arr[n-j-1][i];
+					arr[n-j-1][i] = arr[n-i-1][n-j-1];
+					arr[n-i-1][n-j-1] = arr[j][n-i-1];
+					arr[j][n-i-1] = tmp;
+                }
+            }
+			//alert(tmp + "\n" + arr);
+			//return arr;
+	}
+	
+	// Функция создает двумерные массивы
+	function matrixArray(rows,columns){
+		var arr = new Array();
+		for(var i=0; i<columns; i++){
+			arr[i] = new Array();
+			for(var j=0; j<rows; j++){
+				arr[i][j] = null;//вместо i+j+1 пишем любой наполнитель. В простейшем случае - null
+			}
+		}
+		return arr;
 	}
 </script>
 
