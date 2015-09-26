@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MorskoiBoi.Properties
+namespace Poisk_Puti.Properties
 {
 
 

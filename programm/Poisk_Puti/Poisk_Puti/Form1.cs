@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MorskoiBoi
+namespace Poisk_Puti
 {
     public partial class Form1 : Form
     {
