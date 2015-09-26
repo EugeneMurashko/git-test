@@ -210,71 +210,22 @@
 	}
 	
 	function generationBord(){
-		myFunStavimKorabl();
-		
-		alert("Да ладно!!!");
-		alert(table1);
-	
-		// генерируем корабли и порядок расстановки
-		/*var flag = true;
-		while(flag){
-			var board = new Array(0, 0, 0, 0, 0, 0);
-			for(var i = 0; i < 6; i++){
-				board[i] = getRandomInt(2, 5);
+		// сложность игры. максимум 60
+		var kSlozhnost = 30;
+		var colPoiskKomb = 0;
+		for(var i = 0; i < 1; i++){
+			myFunStavimKorabl();
+			if(prSlozhnost(kSlozhnost)){
+				break;
 			}
-
-			var sum = board[0] + board[1] + board[2];
-			var sum2 = board[3] + board[4] + board[5];
-
-			if(sum == 8 && sum2 == 8){
-				var col2 = 0;
-				var col3 = 0;
-				var col4 = 0;
-				board.forEach(function(item, i, arr) {
-					if(item == 2) col2++;
-					if(item == 3) col3++;
-					if(item == 4) col4++;
-				
-				});
-				if(col2 == 3 && col3 == 2 && col4 == 1)
-					flag = false;
-			}
+			bordClear();
 		}
 		
-		var colP = 0;
-		// расставляем корабли
-		for(var j = 0; j < 3; j++){
-			for(var i = 0; i < board[j]; i++){
-				table1[nextCrd(0, 0)][0] = 1;
-			}
-			if(colP < 2){
-				table1[nextCrd(0, 0)][0] = -1;
-				colP++;
-			}
-		}
-		var colP = 0;
-		for(var j = 3; j < 6; j++){
-			for(var i = 0; i < board[j]; i++){
-				table1[nextCrd(2, 0)][2] = 1;
-			}
-			if(colP < 2){
-				table1[nextCrd(2, 0)][2] = -1;
-				colP++;
-			}
-		}
-		*/
-		// Подготавливаем доску. -1 заменяем на 0
-		for(var i = 0; i < 10; i++){
-				for(var j = 0; j < 10; j++){
-					if(table1[i][j] == -1) table1[i][j] = 0;
-				}
-			}
 		
 		// расставляем 4 однопалубника
 		var col1bord = 0;
 		var flag111 = true;
 		while(flag111){
-		alert("Мы в while " + col1bord + " раз");
 			var k = getRandomInt(0, 10);
 			var l = getRandomInt(0, 10);
 			if(myFunE(k, l))
@@ -294,12 +245,21 @@
 			if(col1bord == 4) flag111 = false;
 		}
 		alert("однопалубники расстивили");
-		/*
-		// вращаем доску случайным образом
-		for(var i = 0; i < getRandomInt(0, 5); i++){ // от 0 до 3х 
-			ternBord(table1);
-		}*/
-		
+	}
+	
+	function prSlozhnost(k){
+		var colKl = 0;
+		for(var i = 0; i < 10; i++)
+			for(var j = 0; j < 10; j++)
+				if(myFunEmpty(i, j))colKl++;
+		if(colKl >= k) return true;
+		else return false;
+	}
+	
+	function bordClear(){
+		for(var i = 0; i < 10; i++)
+			for(var j = 0; j < 10; j++)
+				table1[i][j] == 0;
 	}
 	
 	function myFunStavimKorabl(){
@@ -318,7 +278,7 @@
 			
 			for(var i = 0; i < size; i++){
 				if(myFunE(x, y)){
-					if(x < 0 || x > 10 || y < 0 || y > 10){
+					if(x < 0 || x > 9 || y < 0 || y > 9){
 						flagKorablPoplil = false;
 						break;
 					}
@@ -376,7 +336,6 @@
 								if(myFunE(x, y - 1))
 									if(myFunE(x - 1, y))
 										if(myFunE(x - 1, y - 1)){
-										
 											table1[x][y] = 5;
 											return true;
 										}
@@ -386,7 +345,7 @@
 	
 	// проверяет пуста ли клетка и все во круг нее близко лежащие
 	function myFunE(k, l){
-		if(k < 0 || k > 10 || l < 0 || l > 10)
+		if(k < 0 || k > 9 || l < 0 || l > 9)
 			return true;
 		if(table1[k][l] == 0)
 			return true;
@@ -394,52 +353,11 @@
 			return true;
 		else return false;
 	}
-	/*
-	// помогает расставлять большие корабли
-	function nextCrd(a, str){
-		if(str == 0){
-			for(var i = 0; i < 10; i++){
-				if(table1[i][a] == 0) return i;
-			}
-			
-		}
-		if(str == 1){
-			for(var i = 0; i < 10; i++){
-				if(table1[a][i] == 0) return i;
-			}
-			
-		}
-		if(str == 2){
-			for(var i = 10; i > 0; i--){
-				if(table1[i][a] == 0) return i;
-			}
-			
-		}
-		
-		alert("Ошибка #278");
-	}*/
-
+	
 	// генерация целых случайных чисел
 	function getRandomInt(min, max) {
 		return Math.floor(Math.random() * (max - min)) + min;
 	}
-	/*
-	// функция поворота доски
-	function ternBord(arr){
-		var tmp = matrixArray(10,10);
-            var n = 10;
-            for( var i = 0; i < n / 2; i++ ){
-                for ( var j = i; j < n - 1 - i; j++ ){
-                    tmp = arr[i][j];
-					arr[i][j] = arr[n-j-1][i];
-					arr[n-j-1][i] = arr[n-i-1][n-j-1];
-					arr[n-i-1][n-j-1] = arr[j][n-i-1];
-					arr[j][n-i-1] = tmp;
-                }
-            }
-			//alert(tmp + "\n" + arr);
-			//return arr;
-	}*/
 	
 	// Функция создает двумерные массивы
 	function matrixArray(rows,columns){
