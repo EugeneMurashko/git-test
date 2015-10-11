@@ -23,5 +23,9 @@ namespace lab8
         {
             InitializeComponent();
         }
+        // это будет поле с клетками
+        int[][] battlefiel;
+
+
     }
 }
