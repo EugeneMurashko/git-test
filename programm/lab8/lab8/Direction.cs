@@ -5,7 +5,7 @@ using System.Text;
 
 namespace lab8
 {
-    enum Direction: int
+    public enum Direction: int
     {
         left,
         right,

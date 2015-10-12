@@ -61,6 +61,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Battlefiel.cs" />
     <Compile Include="Direction.cs" />
     <Compile Include="Ship.cs" />
     <Compile Include="ShipState.cs" />

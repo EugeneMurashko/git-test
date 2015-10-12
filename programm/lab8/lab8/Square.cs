@@ -5,15 +5,18 @@ using System.Text;
 
 namespace lab8
 {
+    // вся информация о квадрате. Есть ли тут корабль. Какой он имеенно. Ранен или потоплен.
     public struct Square
     {
         public int nship;
         public int state;
-        public int[][] coordinates;
+        public int x;
+        public int y;
 
-        public Square(NumShip ship, ShipState s, int[][] _coordinates)
+        public Square(NumShip ship, ShipState s, int x, int y)
         {
-            coordinates = _coordinates;
+            this.x = x;
+            this.y = y;
 
             if (s == ShipState.clear)
                 state = 0;
@@ -22,7 +25,7 @@ namespace lab8
             else state = 1; // ShipState.hit
 
             if (ship == NumShip.four_ship)
-                nship = 4;
+                nship = 41;
             else if (ship == NumShip.three_ship_1)
                 nship = 31;
             else if (ship == NumShip.three_ship_2)
@@ -43,18 +46,25 @@ namespace lab8
                 nship = 14;
             else nship = 0; // NumShip.empty
         }
-        
-        public Square(Square s)
+
+        public Square(int nship, int state, int x, int y)
         {
-            nship = s.nship;
-            state = s.state;
-            coordinates = s.coordinates;
+            this.nship = nship;
+            this.state = state;
+            this.x = x;
+            this.y = y;
         }
-
-
-        internal void Move(int i, Direction _direction)
+        
+        internal void Move(int i, Direction direction)
         {
-            
+                if (direction == Direction.left)
+                    x -= i;
+                else if (direction == Direction.right)
+                    x += i;
+                else if (direction == Direction.up)
+                    y += i;
+                else // Direction.down
+                   y -= i;
         }
     }
 

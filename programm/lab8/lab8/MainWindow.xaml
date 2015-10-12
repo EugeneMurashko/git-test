@@ -1,12 +1,300 @@
 ﻿<Window x:Class="lab8.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Морской бой" Height="500" Width="500">
+        Title="Морской бой" Height="500" Width="800" Loaded="Window_Loaded">
 
-
-    <Grid>
+    <StackPanel>
         
-    </Grid>
+        <StackPanel Margin="10" />
+        <Grid Width="700">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Height="300" Width="300" Grid.Row="0" Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row="0" Grid.Column="0" Name="btn00" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="1" Name="btn01" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="2" Name="btn02" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="3" Name="btn03" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="4" Name="btn04" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="5" Name="btn05" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="6" Name="btn06" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="7" Name="btn07" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="8" Name="btn08" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="9" Name="btn09" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="1" Grid.Column="0" Name="btn10" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="1" Name="btn11" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="2" Name="btn12" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="3" Name="btn13" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="4" Name="btn14" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="5" Name="btn15" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="6" Name="btn16" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="7" Name="btn17" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="8" Name="btn18" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="9" Name="btn19" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="2" Grid.Column="0" Name="btn20" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="1" Name="btn21" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="2" Name="btn22" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="3" Name="btn23" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="4" Name="btn24" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="5" Name="btn25" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="6" Name="btn26" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="7" Name="btn27" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="8" Name="btn28" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="9" Name="btn29" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="3" Grid.Column="0" Name="btn30" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="1" Name="btn31" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="2" Name="btn32" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="3" Name="btn33" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="4" Name="btn34" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="5" Name="btn35" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="6" Name="btn36" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="7" Name="btn37" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="8" Name="btn38" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="9" Name="btn39" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="4" Grid.Column="0" Name="btn40" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="1" Name="btn41" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="2" Name="btn42" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="3" Name="btn43" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="4" Name="btn44" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="5" Name="btn45" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="6" Name="btn46" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="7" Name="btn47" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="8" Name="btn48" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="9" Name="btn49" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="5" Grid.Column="0" Name="btn50" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="1" Name="btn51" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="2" Name="btn52" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="3" Name="btn53" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="4" Name="btn54" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="5" Name="btn55" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="6" Name="btn56" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="7" Name="btn57" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="8" Name="btn58" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="9" Name="btn59" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="6" Grid.Column="0" Name="btn60" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="1" Name="btn61" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="2" Name="btn62" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="3" Name="btn63" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="4" Name="btn64" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="5" Name="btn65" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="6" Name="btn66" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="7" Name="btn67" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="8" Name="btn68" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="9" Name="btn69" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="7" Grid.Column="0" Name="btn70" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="1" Name="btn71" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="2" Name="btn72" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="3" Name="btn73" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="4" Name="btn74" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="5" Name="btn75" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="6" Name="btn76" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="7" Name="btn77" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="8" Name="btn78" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="9" Name="btn79" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="8" Grid.Column="0" Name="btn80" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="1" Name="btn81" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="2" Name="btn82" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="3" Name="btn83" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="4" Name="btn84" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="5" Name="btn85" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="6" Name="btn86" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="7" Name="btn87" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="8" Name="btn88" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="9" Name="btn89" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="9" Grid.Column="0" Name="btn90" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="1" Name="btn91" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="2" Name="btn92" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="3" Name="btn93" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="4" Name="btn94" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="5" Name="btn95" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="6" Name="btn96" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="7" Name="btn97" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="8" Name="btn98" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="9" Name="btn99" Click="img_MouseUp" Background="SkyBlue" />
+                
+            </Grid>
+
+            <Grid Height="300" Width="300" Grid.Row="0" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <Button Grid.Row="0" Grid.Column="0" Name="Io_btn00" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="1" Name="Io_btn01" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="2" Name="Io_btn02" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="3" Name="Io_btn03" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="4" Name="Io_btn04" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="5" Name="Io_btn05" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="6" Name="Io_btn06" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="7" Name="Io_btn07" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="8" Name="Io_btn08" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="0" Grid.Column="9" Name="Io_btn09" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="1" Grid.Column="0" Name="Io_btn10" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="1" Name="Io_btn11" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="2" Name="Io_btn12" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="3" Name="Io_btn13" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="4" Name="Io_btn14" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="5" Name="Io_btn15" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="6" Name="Io_btn16" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="7" Name="Io_btn17" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="8" Name="Io_btn18" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="1" Grid.Column="9" Name="Io_btn19" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="2" Grid.Column="0" Name="Io_btn20" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="1" Name="Io_btn21" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="2" Name="Io_btn22" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="3" Name="Io_btn23" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="4" Name="Io_btn24" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="5" Name="Io_btn25" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="6" Name="Io_btn26" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="7" Name="Io_btn27" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="8" Name="Io_btn28" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="2" Grid.Column="9" Name="Io_btn29" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="3" Grid.Column="0" Name="Io_btn30" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="1" Name="Io_btn31" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="2" Name="Io_btn32" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="3" Name="Io_btn33" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="4" Name="Io_btn34" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="5" Name="Io_btn35" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="6" Name="Io_btn36" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="7" Name="Io_btn37" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="8" Name="Io_btn38" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="3" Grid.Column="9" Name="Io_btn39" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="4" Grid.Column="0" Name="Io_btn40" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="1" Name="Io_btn41" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="2" Name="Io_btn42" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="3" Name="Io_btn43" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="4" Name="Io_btn44" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="5" Name="Io_btn45" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="6" Name="Io_btn46" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="7" Name="Io_btn47" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="8" Name="Io_btn48" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="4" Grid.Column="9" Name="Io_btn49" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="5" Grid.Column="0" Name="Io_btn50" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="1" Name="Io_btn51" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="2" Name="Io_btn52" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="3" Name="Io_btn53" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="4" Name="Io_btn54" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="5" Name="Io_btn55" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="6" Name="Io_btn56" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="7" Name="Io_btn57" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="8" Name="Io_btn58" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="5" Grid.Column="9" Name="Io_btn59" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="6" Grid.Column="0" Name="Io_btn60" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="1" Name="Io_btn61" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="2" Name="Io_btn62" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="3" Name="Io_btn63" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="4" Name="Io_btn64" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="5" Name="Io_btn65" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="6" Name="Io_btn66" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="7" Name="Io_btn67" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="8" Name="Io_btn68" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="6" Grid.Column="9" Name="Io_btn69" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="7" Grid.Column="0" Name="Io_btn70" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="1" Name="Io_btn71" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="2" Name="Io_btn72" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="3" Name="Io_btn73" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="4" Name="Io_btn74" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="5" Name="Io_btn75" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="6" Name="Io_btn76" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="7" Name="Io_btn77" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="8" Name="Io_btn78" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="7" Grid.Column="9" Name="Io_btn79" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="8" Grid.Column="0" Name="Io_btn80" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="1" Name="Io_btn81" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="2" Name="Io_btn82" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="3" Name="Io_btn83" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="4" Name="Io_btn84" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="5" Name="Io_btn85" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="6" Name="Io_btn86" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="7" Name="Io_btn87" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="8" Name="Io_btn88" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="8" Grid.Column="9" Name="Io_btn89" Click="img_MouseUp" Background="SkyBlue" />
+
+                <Button Grid.Row="9" Grid.Column="0" Name="Io_btn90" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="1" Name="Io_btn91" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="2" Name="Io_btn92" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="3" Name="Io_btn93" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="4" Name="Io_btn94" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="5" Name="Io_btn95" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="6" Name="Io_btn96" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="7" Name="Io_btn97" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="8" Name="Io_btn98" Click="img_MouseUp" Background="SkyBlue" />
+                <Button Grid.Row="9" Grid.Column="9" Name="Io_btn99" Click="img_MouseUp" Background="SkyBlue" />
+
+            </Grid>
+            
+        </Grid>
+    </StackPanel>
+    
 
 
 </Window>

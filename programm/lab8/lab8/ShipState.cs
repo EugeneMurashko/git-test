@@ -5,7 +5,7 @@ using System.Text;
 
 namespace lab8
 {
-    enum ShipState
+    public enum ShipState
     {
         miss,
         hit,

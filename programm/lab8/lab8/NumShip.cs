@@ -5,7 +5,7 @@ using System.Text;
 
 namespace lab8
 {
-    enum NumShip
+    public enum NumShip: int
     {
         four_ship,
         three_ship_1,
