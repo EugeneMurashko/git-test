@@ -23,7 +23,7 @@ namespace lab8
             else if (s == ShipState.miss)
                 state = -1;
             else state = 1; // ShipState.hit
-
+            
             if (ship == NumShip.four_ship)
                 nship = 41;
             else if (ship == NumShip.three_ship_1)
@@ -45,6 +45,21 @@ namespace lab8
             else if (ship == NumShip.single_ship_4)
                 nship = 14;
             else nship = 0; // NumShip.empty
+             
+        }
+
+        public Square(int nship, ShipState s, int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+
+            if (s == ShipState.clear)
+                state = 0;
+            else if (s == ShipState.miss)
+                state = -1;
+            else state = 1; // ShipState.hit
+
+            this.nship = nship;
         }
 
         public Square(int nship, int state, int x, int y)
