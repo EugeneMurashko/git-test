@@ -1,0 +1,16 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
+            <!--Для прямоугольника-->
+            <RowDefinition Height="1*" />
+            <!--Для всего остального-->
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" Text="Пример другого компонента на форме" VerticalAlignment="Top" />
+        <!--Rectangle должен идти последним-->
+        <Rectangle Name="rect" Height="300" Width="300" Fill="Black" MouseDown="Rectangle_MouseDown" MouseUp="Rectangle_MouseUp" MouseMove="Rectangle_MouseMove" />
+    </Grid>
+</Window>

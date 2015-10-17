@@ -10,33 +10,39 @@ namespace lab8
         public List<Square> coordinateslist = new List<Square>();
         public ShipState ShipState = ShipState.clear;
         public Square square;
+        public int hitpoint;
 
         public Ship(NumShip ship, Direction direction, Square coord) 
         {
             square = coord;
             int length;
-            if (ship == NumShip.four_ship)
+            if ((int)ship == 1)
+            {
                 length = 4;
-            else if (ship == NumShip.three_ship_1)
+                hitpoint = 4;
+            }
+            else if ((int)ship > 1 && (int)ship <= 3)
+            {
                 length = 3;
-            else if (ship == NumShip.three_ship_2)
-                length = 3;
-            else if (ship == NumShip.double_ship_1)
+                hitpoint = 3;
+            }
+            else if ((int)ship > 3 && (int)ship <= 6)
+            {
                 length = 2;
-            else if (ship == NumShip.double_ship_2)
-                length = 2;
-            else if (ship == NumShip.double_ship_3)
-                length = 2;
-            else if (ship == NumShip.single_ship_1)
+                hitpoint = 2;
+            }
+            else if ((int)ship > 6 && (int)ship <= 10)
+            {
                 length = 1;
-            else if (ship == NumShip.single_ship_2)
-                length = 1;
-            else if (ship == NumShip.single_ship_3)
-                length = 1;
-            else if (ship == NumShip.single_ship_4)
-                length = 1;
-            else length = 0; // NumShip.empty
-
+                hitpoint = 1;
+            }
+            else
+            {
+                length = 0;
+                hitpoint = 0;
+            }
+            
+            
             for(int i = 0; i < length; i++)
             {
                 Square s = new Square(coord.nship, coord.state, coord.x, coord.y);

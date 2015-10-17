@@ -7,8 +7,8 @@ namespace lab8
 {
     public enum ShipState
     {
-        miss,
-        hit,
-        clear
+        shot = -1, // РАНЕН
+        killed = 1, // УБИТ
+        clear = 0 // НЕ ТРОНУТ
     }
 }

@@ -20,7 +20,7 @@ namespace lab8
 
             if (s == ShipState.clear)
                 state = 0;
-            else if (s == ShipState.miss)
+            else if (s == ShipState.shot)
                 state = -1;
             else state = 1; // ShipState.hit
             
@@ -55,7 +55,7 @@ namespace lab8
 
             if (s == ShipState.clear)
                 state = 0;
-            else if (s == ShipState.miss)
+            else if (s == ShipState.shot)
                 state = -1;
             else state = 1; // ShipState.hit
 
@@ -70,7 +70,7 @@ namespace lab8
             this.y = y;
         }
         
-        internal void Move(int i, Direction direction)
+        public void Move(int i, Direction direction)
         {
                 if (direction == Direction.left)
                     x -= i;

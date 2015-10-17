@@ -21,8 +21,6 @@ namespace lab8
                     squareArr[i, j].x = i;
                     squareArr[i, j].y = j;
                 }
-                    
-
         }
 
         public void ArrangeShips(int complexity)
@@ -49,6 +47,7 @@ namespace lab8
                         }
                     }
                 }
+
         }
 
         public bool CheckingSpace(Ship s)
